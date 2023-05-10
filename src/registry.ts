@@ -1,9 +1,9 @@
 import type { TemplateInfo, TemplateProvider } from './types'
 import { debug, sendFetch } from './_utils'
 
-// const DEFAULT_REGISTRY = 'https://cdn.jsdelivr.net/gh/nyxlabs/gitize/templates'
+// const DEFAULT_REGISTRY = 'https://cdn.jsdelivr.net/gh/nyxblabs/gitize/templates'
 const DEFAULT_REGISTRY
-  = 'https://raw.githubusercontent.com/nyxlabs/gitize/main/templates'
+  = 'https://raw.githubusercontent.com/nyxblabs/gitize/main/templates'
 
 export function registryProvider(registryEndpoint: string = DEFAULT_REGISTRY,
    options?: { auth?: string }) {
