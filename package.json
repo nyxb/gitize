@@ -30,13 +30,13 @@
   "scripts": {
     "build": "unbuild",
     "dev": "vitest dev",
-    "gitwizard": "jiti ./src/cli.ts",
+    "gitize": "dynot ./src/cli.ts",
     "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "lint:fix": "eslint --ext .ts,.js,.mjs,.cjs . --fix",
     "prepack": "unbuild",
-    "play": "pnpm gitize --force-clean --verbose nyxblabs .tmp/clone",
-    "release": "pnpm test && pnpm publish",
-    "test": "pnpm lint && vitest run --coverage"
+    "play": "nyxr gitize --force-clean --verbose nyxblabs .tmp/clone",
+    "release": "nyxr test && pnpm publish",
+    "test": "nyxr lint && vitest run --coverage"
   },
   "dependencies": {
     "@nyxb/picocolors": "^1.0.1",
