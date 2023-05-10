@@ -1,0 +1,66 @@
+{
+  "name": "gitize",
+  "version": "0.0.1",
+  "description": "🌟 Easily fetch templates and Git repositories with joy!",
+  "author": "Dennis Ollhoff <contact@nyxb.com>",
+  "license": "MIT",
+  "homepage": "https://💻nyxb.ws",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxblabs/gitize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyxblabs/gitize/issues"
+  },
+  "sideEffects": false,
+  "bin": {
+    "giget": "./dist/cli.mjs"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vitest dev",
+    "gitwizard": "jiti ./src/cli.ts",
+    "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
+    "lint:fix": "eslint --ext .ts,.js,.mjs,.cjs . --fix",
+    "prepack": "unbuild",
+    "play": "pnpm gitize --force-clean --verbose nyxblabs .tmp/clone",
+    "release": "pnpm test && pnpm publish",
+    "test": "pnpm lint && vitest run --coverage"
+  },
+  "dependencies": {
+    "@nyxb/picocolors": "^1.0.1",
+    "consolji": "^0.1.1",
+    "fetch-for-all": "^0.0.2",
+    "https-proxy-agent": "^5.0.1",
+    "mri": "^1.2.0",
+    "nyxdefaults": "^0.0.2",
+    "nyxpath": "^0.0.3",
+    "tar": "^6.1.13"
+  },
+  "devDependencies": {
+    "@nyxb/eslint-config": "^0.0.53",
+    "@types/node": "^18.15.11",
+    "@types/tar": "^6.1.4",
+    "@vitest/coverage-c8": "^0.29.8",
+    "dynot": "^0.1.1",
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.0",
+    "vitest": "^0.29.8"
+  },
+  "files": [
+    "dist"
+  ],
+  "packageManager": "pnpm@8.0.0"
+}
