@@ -25,7 +25,7 @@ async function main() {
    const dir = arguments_._[1]
 
    if (!input || arguments_.help || arguments_.h) {
-      console.error(
+      consolji.error(
          'Usage: npx gitize@latest <input> [<dir>] [--force] [--force-clean] [--offline] [--prefer-offline] [--shell] [--registry]  [--no-registry] [--verbose] [--cwd] [--auth]',
       )
       process.exit(1)
@@ -57,6 +57,6 @@ async function main() {
 }
 
 main().catch((error) => {
-   console.error(error)
+   consolji.error(error)
    process.exit(1)
 })
