@@ -1,4 +1,4 @@
-![Cover](https://raw.githubusercontent.com/nyxblabs/gitize/main/.github/assets/cover-github.jpg)
+![Cover](https://raw.githubusercontent.com/nyxblabs/gitize/main/.github/assets/cover-github.png)
 
 # ✨ gitize
 
@@ -25,7 +25,7 @@
 
 Enjoy exploring and trying out Gitize!
 
-## Usage (CLI)
+## 🚀 Usage (CLI)
 
 ```bash
 npx gitize@latest <template> [<dir>] [...options]
@@ -49,7 +49,7 @@ npx gitize@latest <template> [<dir>] [...options]
 - `--cwd`: Set current working directory to resolve dirs relative to it.
 - `--auth`: Custom Authorization token to use for downloading template. (Can be overridden with `GITIZE_AUTH` environment variable).
 
-### Examples
+### 💡 Examples
 
 ```sh
 # Clone nuxt starter from gitize template registry
@@ -96,7 +96,7 @@ Creating a custom registry is like weaving a magical spell - it lets you take co
 
 Because of the simplicity, you can even use a GitHub repository as template registry. But, with a custom registry, you can build something even more powerful by bringing your own API. So, let your magic flow and create your own custom registry with Gitize!
 
-## Usage:
+## 👨‍💻 Usage:
 
 Install:
 
@@ -114,7 +114,7 @@ npm install gitize
 yarn install gitize
 ```
 
-Import:
+📥 Import:
 
 ```js
 // ESM
@@ -126,7 +126,7 @@ const { downloadTemplate } = require('gitize')
 
 ### 📥 `downloadTemplate(source, options?)`
 
-**Example:**
+**💡 Example::**
 
 ```js
 const { source, dir } = await downloadTemplate('github:nyxlabs/template')
@@ -204,7 +204,7 @@ const { source, dir } = await downloadRepo('themes:test', {
 - 📦 Install dependencies using `nyxi`
 - 🧪 Run interactive tests using `nyxr dev`
 
-## License
+## 📜 License
 
 [MIT](./LICENSE) Made with 💞
 
