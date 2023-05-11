@@ -1,6 +1,0 @@
-{
-  "name": "next",
-  "defaultDir": "create-next-app",
-  "url": "https://nextjs.org/",
-  "tar": "https://codeload.github.com/vercel/next.js/tar.gz/refs/main"
-}

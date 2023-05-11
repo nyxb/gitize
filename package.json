@@ -34,7 +34,6 @@
     "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "lint:fix": "eslint --ext .ts,.js,.mjs,.cjs . --fix",
     "prepack": "unbuild",
-    "play": "nyxr gitize --force-clean --verbose nyxblabs .tmp/clone",
     "release": "nyxr test && pnpm publish",
     "test": "nyxr lint && vitest run --coverage"
   },
