@@ -1,4 +1,8 @@
-![Cover](https://raw.githubusercontent.com/nyxblabs/gitize/main/.github/assets/cover-github.png)
+[![cover][cover-src]][cover-href]
+[![npm version][npm-version-src]][npm-version-href] 
+[![npm downloads][npm-downloads-src]][npm-downloads-href] 
+[![bundle][bundle-src]][bundle-href] 
+[![License][license-src]][license-href]
 
 # ✨ gitize
 
@@ -212,7 +216,15 @@ const { source, dir } = await downloadRepo('themes:test', {
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/gitize?style=flat-square
+[npm-version-src]: https://img.shields.io/npm/v/gitize?style=flat&colorA=18181B&colorB=14F195
 [npm-version-href]: https://npmjs.com/package/gitize
-[npm-downloads-src]: https://img.shields.io/npm/dm/gitize?style=flat-square
+[npm-downloads-src]: https://img.shields.io/npm/dm/gitize?style=flat&colorA=18181B&colorB=14F195
 [npm-downloads-href]: https://npmjs.com/package/gitize
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/gitize?style=flat&colorA=18181B&colorB=14F195
+[bundle-href]: https://bundlephobia.com/result?p=gitize
+[license-src]: https://img.shields.io/github/license/nyxblabs/gitize.svg?style=flat&colorA=18181B&colorB=14F195
+[license-href]: https://github.com/nyxblabs/gitize/blob/main/LICENSE
+
+<!-- Cover -->
+[cover-src]: https://raw.githubusercontent.com/nyxblabs/gitize/main/.github/assets/cover-github-gitize.png
+[cover-href]: https://💻nyxb.ws
